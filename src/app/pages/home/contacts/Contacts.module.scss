@@ -1,0 +1,47 @@
+.layout {
+  padding: 15px 35px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.header {
+  display: flex;
+  row-gap: 15px;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 30px;
+  margin-top: 15px;
+}
+
+.navigation a {
+  color: var(--black-color);
+  transition: 0.3s;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.form {
+  margin-top: 30px;
+}
+
+.about {
+  background: url("/bg.svg") center -50px no-repeat;
+  background-size: 80% 80%;
+  padding-top: 20px;
+}

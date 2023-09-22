@@ -1,0 +1,50 @@
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+
+  li {
+    &:hover {
+      .link {
+        color: var(--primary-color);
+      }
+    }
+  }
+}
+
+.link {
+  transition: 0.3s;
+  color: var(--dark-color);
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 3px;
+    bottom: 10px;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+  }
+
+  a {
+    color: var(--primary-color);
+  }
+}

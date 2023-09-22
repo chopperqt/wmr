@@ -1,0 +1,26 @@
+.layout {
+  width: 100%;
+  padding: 0 60px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: flex;
+  column-gap: 55px;
+}
+
+.link {
+  display: flex;
+  column-gap: 10px;
+  color: var(--white-color);
+  align-items: center;
+}
+
+.icon {
+  width: 16px;
+}

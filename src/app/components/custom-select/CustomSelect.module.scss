@@ -1,0 +1,56 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: start;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.label {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.select {
+  padding: 15px 25px;
+  border: 1px solid var(--border-color);
+  font-size: 15px;
+  border-radius: 30em;
+  width: 100%;
+  transition: all 0.4s;
+  outline: none;
+  appearance: none;
+
+  &:hover,
+  &:focus {
+    border-color: var(--primary-color);
+  }
+
+  &Error {
+    border-color: var(--red-color);
+
+    &:hover,
+    &:focus {
+      border-color: var(--red-color);
+    }
+  }
+}
+
+.required {
+  margin-left: 5px;
+  color: var(--red-color);
+}
+
+.error {
+  width: fit-content;
+  padding: 0.2em 0.7em;
+  background: #fee;
+  position: absolute;
+  border-radius: 30em;
+  color: var(--red-color);
+  bottom: -23px;
+  display: flex;
+  column-gap: 3px;
+  align-items: center;
+}
