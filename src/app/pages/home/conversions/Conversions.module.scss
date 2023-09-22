@@ -37,6 +37,10 @@
       color: var(--primary-color);
     }
 
+    &:hover button div {
+      background-color: var(--primary-color);
+    }
+
     &:last-child {
       border-bottom: 1px solid var(--border-color);
     }

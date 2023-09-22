@@ -1,13 +1,22 @@
 .layout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 80px;
+  width: 100%;
+}
+
+.content {
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  background: var(--white-color);
 }
 
 .wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navigation {
@@ -39,12 +48,24 @@
     content: "";
     width: 20px;
     height: 3px;
-    bottom: 10px;
+    bottom: -5px;
     border-radius: 6px;
     background-color: var(--primary-color);
   }
 
   a {
     color: var(--primary-color);
+  }
+}
+
+.sticky {
+  position: fixed;
+
+  &Close {
+    top: -80px;
+  }
+
+  &Open {
+    top: 0;
   }
 }

@@ -28,3 +28,13 @@ export const NavigationItems = [
     link: "/contacts",
   },
 ];
+
+export const AnimateKey = {
+  Open: "open",
+  Close: "close",
+};
+
+export const Animate = {
+  [AnimateKey.Open]: { top: 0 },
+  [AnimateKey.Close]: { top: -80 },
+};
