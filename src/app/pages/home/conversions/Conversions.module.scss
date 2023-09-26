@@ -1,3 +1,5 @@
+@import "../../../assets/Media.module.scss";
+
 .layout {
   display: flex;
   justify-content: center;
@@ -10,11 +12,23 @@
   display: flex;
   column-gap: 50px;
   margin-top: 25px;
+
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .conversions {
   width: 31%;
   list-style: none;
+
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+  }
 }
 
 .item {
